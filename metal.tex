@@ -1,0 +1,100 @@
+% Created 2016-05-04 ������ 21:08
+\documentclass[UTF8,nofonts]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{ctex}
+\setCJKmainfont[BoldFont=FandolSong-Bold.otf,ItalicFont=FandolKai-Regular.otf]{FandolSong-Regular.otf}
+\setCJKsansfont[BoldFont=FandolHei-Bold.otf]{FandolHei-Regular.otf}
+\setCJKmonofont{FandolFang-Regular.otf}
+% !TEX program = XeLaTeX
+% !TEX encoding = UTF-8
+\author{5分钟学院}
+\date{\today}
+\title{使用Metalsmith搭建静态博客}
+\hypersetup{
+ pdfauthor={5分钟学院},
+ pdftitle={使用Metalsmith搭建静态博客},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 24.5.1 (Org mode 8.3.4)}, 
+ pdflang={Zh-Cn}}
+\begin{document}
+
+\maketitle
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+
+\section{Metalsmith简介，为何？}
+\label{sec:orgheadline4}
+
+\href{http://metalsmith.io}{Metalsmith} 是使用NodeJS进行文件处理的库，一般用于静态站生成。
+
+\subsection{基本流程}
+\label{sec:orgheadline2}
+\subsubsection{sdfjkdsf}
+\label{sec:orgheadline1}
+\begin{enumerate}
+\item \texttt{.src} 读取*源文件*( .src(\emph{dirname}) )， \emph{dirname} 默认 \texttt{src/} 目录
+
+\begin{itemize}
+\item 每个源文件由两部分组成：
+\begin{enumerate}
+\item \href{https://middlemanapp.com/basics/frontmatter}{YAML-Frontmatter} 头部(YAML header)
+
+\item 内容区(contents)
+\end{enumerate}
+
+\item 解析源文件生成JS Object, 送入下一层(\href{https://github.com/segmentio/ware}{middleware})
+\end{itemize}
+
+\item \texttt{.use} 使用一步或多步插件对上一步的JS Object进行处理。送入下一层
+
+\item \texttt{.build} 将最终处理的contents写入相应文件，默认存放 \texttt{build/} 目录
+\end{enumerate}
+
+\subsection{常用插件}
+\label{sec:orgheadline3}
+
+\begin{itemize}
+\item \href{https://github.com/superwolff/metalsmith-layouts}{metalsmith-layouts}
+\item \href{https://github.com/segmentio/metalsmith-markdown}{metalsmith-markdown}
+\item \href{https://github.com/segmentio/metalsmith-permalinks}{metalsmith-permalinks}
+\item \href{https://github.com/segmentio/metalsmith-collections}{metalsmith-collections}
+\end{itemize}
+
+
+\section{优点}
+\label{sec:orgheadline5}
+
+\begin{itemize}
+\item 配置灵活简单，容易上手
+\item 插件容易写，可与Nodejs各种类库无缝接合
+\item 生成的静态站无服务器运算，最小化服务器负担
+\end{itemize}
+
+
+\section{应用}
+\label{sec:orgheadline6}
+
+\begin{itemize}
+\item 博客(blog)
+\item 小型CMS站点(公司或个人)
+\item 对响应时间有要求的站点(静态无服务器运算)
+\end{itemize}
+
+\section{搭建博客过程}
+\label{sec:orgheadline7}
+\end{document}

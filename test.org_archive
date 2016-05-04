@@ -1,0 +1,43 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file d:/Emacs/test/org/test.org
+
+
+* sldkfjlsjdf
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-05-04 星期三 15:26
+  :ARCHIVE_FILE: ~/test/org/test.org
+  :ARCHIVE_CATEGORY: test
+  :END:
+  - Note taken on [2016-05-04 星期三 14:37] \\
+    sdoifjsdf
+    oweijfowjeof
+    oiwejfojwoejfwef
+  Still outside the drawer
+:oijo:
+osdifjosjdf
+:END:
+
+:DRAWERNAME:
+This is inside the drawer.
+:END:
+After the drawer.
+
+oiewjf oijaweofjoawjeofjo ajweoj oajswoefjoawje 
+aweoifjaowiejfojaowejfo jaowejfo jaowejf ojawoefj oawjoefj oawjoefj
+** soidjfo
+*** osdjfojosf
+*sdoifj*, /sdiofjo/, =versdfj=, +soidfj+,
+
+- soidjfosdjfosd
+- osidjfsdjf
+[[http://baidu.com][
+biadu]]
+
+* so  difjosjdf                                                        :node:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2016-05-04 星期三 15:26
+  :ARCHIVE_FILE: ~/test/org/test.org
+  :ARCHIVE_CATEGORY: test
+  :END:

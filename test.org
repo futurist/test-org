@@ -1,0 +1,79 @@
+* baidu.com新技术革命
+| sodijf新技术革命       | asdf 新技术革命            |
+|------------------------+----------------------------|
+| osidfjosdjfosdjfojsd   | sdfjsdofdf                 |
+| soidfjosjfooisdfjosdjf | oisjdfojsdiofjos           |
+| dsofijosdf             | soaidfjosajdf osdifjsoidfj |
+
+* sdiofjosidjf新技术革命
+#+TITLE: osdijf oisjdfojsodij
+#+OPTIONS: toc:nil
+#+OPTIONS: html-postamble:nil
+
+good for this新技术革命 manual.
+
+
+     The Org homepage[fn:metalsmith: static website generator using node.] now looks a lot better than it used to.
+     The Org homepage[fn:1] now looks a lot better than it used to.
+
+[fn:1] The link is: http://orgmode.org sdiofjosidjf新技术革命
+
+* Source code新技术革命
+** osidjfojsdf新技术革命
+*** TODO soidjfosdjfosd
+**** sdoifjosdjofjosdf
+***** oisdjfosjdofjosdof
+****** oisdfjosdjofjosdjfo
+******* sdifjosjdofjsodfjosd
+******** TODO sodifjosjdofjo
+******** TODO soidfjosjdof
+******** sidofjosjdofsodjfojsdoifj新技术革命
+
+#+BEGIN_SRC javascript
+var a=100;
+a+=10;
+function abc(){}
+
+#+END_SRC
+
++ oidsfj :: sodifjojsdf
++ [ ] fjisdf :: sdoifjosdjofjosdf
+
++ [X] oisdjf :: sodijfoj
+
+  * TODO Organize party [1/4]
+    - [-] call people [1/2]
+      - [ ] Peter
+      - [X] Sarah
+    - [ ] order food
+    - [-] sodijfofisdjof
+      - [X] sdfijosdfjoj
+      - [X] soidfjo
+      - [ ] 324234
+    - [X] sdoifjosdjofje
+
++ This: \alpha \rightarrow \beta
+  soidfjosjdof
+
+******** TODO soidjfosjdf
+******** oifjosdijfosdf
+******* sodifjosdjfojsodfj
+******* TODO soidjfosjdofjo
+****** foiwejfojweofjoweofwewioefjowe
+****** TODO soidfjosjdofjosdjf
+** oidfjoisoidfjosdof
+* TODO sadoijfoajsdf                                                 :ATTACH:
+  DEADLINE: <2016-05-06 ÐÇÆÚÎå>
+  :PROPERTIES:
+  :Attachments: test.html
+  :ID:       6883cf01-a288-424d-aaae-7acdf6596044
+  :END:
+
+- $O(n \log n)$
+
+\begin{align*}
+3 * 2 + &= 6 + 1 \\
+        &= 7
+\end{align*}
+* TODO sdifjosjdf
+* TODO soidfjosjdf

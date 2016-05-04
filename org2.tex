@@ -1,0 +1,215 @@
+% !TEX program = XeLaTeX
+% !TEX encoding = UTF-8
+\documentclass[UTF8,nofonts]{ctexart}
+\setCJKmainfont[BoldFont=FandolSong-Bold.otf,ItalicFont=FandolKai-Regular.otf]{FandolSong-Regular.otf}
+\setCJKsansfont[BoldFont=FandolHei-Bold.otf]{FandolHei-Regular.otf}
+\setCJKmonofont{FandolFang-Regular.otf}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\date{\today}
+\title{Example}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={Example},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 24.5.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Basics}
+\label{sec:orgheadline1}
+
+You can make words \textbf{bold}, \emph{italic}, \uline{underlined}, \texttt{code} and
+\texttt{verbatim}, and, if you must, \sout{strike-through}. Text in the code and
+verbatim string is not processed for Org mode specific syntax, it is
+exported verbatim.
+
+Some Greek like \(\alpha\), \(\beta\) and \(\gamma\).
+
+And here is an example link to \href{http://orgmode.org/}{org-mode} homepage.
+
+\section{Headlines}
+\label{sec:orgheadline4}
+
+text
+
+\subsection{Alpha}
+\label{sec:orgheadline3}
+\begin{itemize}
+\item Note taken on \textit{[2016-05-04 15:22] } \\
+1234452345
+234523452345345
+\end{itemize}
+oisdjfojsdofj
+sdfoijosdjfoo
+text
+
+\begin{center}
+\begin{tabular}{lr}
+soidjf & soidfjos\\
+osidjfos & sdoifjosdjf\\
+soidjfosjdf & sdoifjsodjfo\\
+isodfjosjdf & 234523452345345\\
+234523452345345 & 345546\\
+ & \\
+\end{tabular}
+\end{center}
+
+\subsubsection{Bravo}
+\label{sec:orgheadline2}
+\begin{itemize}
+\item Note taken on \textit{[2016-05-04 15:23] } \\
+isfodjosjdfs
+dfiojsodfj
+\end{itemize}
+text
+
+\section{Lists}
+\label{sec:orgheadline5}
+
+\begin{itemize}
+\item List Item 0
+\item List Item 1
+\item List Item 2
+\item List Item 3
+\end{itemize}
+
+\section{Blocks}
+\label{sec:orgheadline9}
+\subsubsection{Normal blocks}
+\label{sec:orgheadline6}
+
+\begin{verbatim}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\end{verbatim}
+
+\subsubsection{Quote blocks}
+\label{sec:orgheadline7}
+
+\begin{quote}
+Programs must be written for people to read, and only incidentally
+for machines to execute.
+
+\emph{Abelson \& Sussman, SICP, preface to the first edition}
+\end{quote}
+
+\subsubsection{Source code blocks}
+\label{sec:orgheadline8}
+
+\begin{verbatim}
+(defun yell (n)
+  (if (= n 0) "hiya"
+    (concat (yell (- n 1)) "!")))
+
+(yell 5) ;; "hiya!!!!"
+\end{verbatim}
+
+\section{Tables}
+\label{sec:orgheadline10}
+
+\begin{center}
+\begin{tabular}{lrll}
+Name & Price & Freshwater & Family\\
+\hline
+Stingray & 49.99 & no & Myliobatoidei\\
+Salmon & 23.99 & both & Salmonidae\\
+Barracuda & 12.99 & no & Sphyraena\\
+\end{tabular}
+\end{center}
+
+\section{Sections}
+\label{sec:orgheadline12}
+
+\subsection{Lord of the Rings}
+\label{sec:orgheadline11}
+
+My favorite scenes are (in this order)
+
+\begin{enumerate}
+\item The attack of the Rohirrim
+\item Eowyn's fight with the witch king
+wha wei fiew ieow
+\end{enumerate}
+
+foi oiw fiew woe
+sdoifjsdoif woiejfweoifj woejfiwoe owef
+中文测试测试
+
+\begin{itemize}
+\item 234测试人材新技术os2234
+\item this was already my favorite scene in the book
+\item I really like Miranda Otto.
+\end{itemize}
+\begin{enumerate}
+\item Peter Jackson being shot by Legolas
+\begin{itemize}
+\item on DVD only
+\end{itemize}
+He makes a really funny face when it happens.
+\end{enumerate}
+
+But in the end, no individual scenes matter but the film as a whole.
+
+Important actors in this film are:
+
+\begin{description}
+\item[{oidsfj}] sdoifj
+
+\item[{Elijah Wood}] He plays Frodo
+\item[{Sean Austin}] He plays Sam, Frodo's friend.  I still remember
+him very well from his role as Mikey Walsh in The Goonies.
+\end{description}
+
+\section{HTML}
+\label{sec:orgheadline13}
+
+Here is some markup: <b>not bold text</b>
+
+And a source block:
+
+\begin{verbatim}
+<b>pow!</b>
+\end{verbatim}
+
+Finally inline: bold text
+
+See org-mode manual \href{http://orgmode.org/manual/Quoting-HTML-tags.html#Quoting-HTML-tags}{Quoting HTML tags}.
+
+\section{Footnote}
+\label{sec:orgheadline14}
+
+Here lies exact instructions \footnote{Except for USA, Mexico and Canada} for random \footnote{Further tournament types will be added} noise.
+
+\section{Latex}
+\label{sec:orgheadline15}
+
+\emph{Trace execution using example:}
+
+Assume \(\alpha=9\), \(n=16\) and \(x=0\).
+
+Stack grows until base case \(2^{x}=n\), thenunwinds.
+
+\section{Custom ID}
+\label{sec:orgheadline16}
+
+\hyperref[sec:orgheadline9]{Link to custom id}
+\end{document}
