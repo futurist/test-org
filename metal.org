@@ -1,0 +1,51 @@
+#+TITLE: Metalsmith使用方法教程
+#+OPTIONS: num:4 H:6 toc:2
+#+AUTHOR: 5分钟学院
+#+DATE: <2016-05-05 Thu>
+#+LANGUAGE: zh-CN
+
+* Metalsmith简介，为何？
+
+[[http://metalsmith.io/][Metalsmith]] 是使用NodeJS进行文件处理的库，一般用于静态站生成。
+
+** 基本流程
+
+1. =.src= 读取 *源文件* ( .src(/dirname/) )， /dirname/ 默认 =src/= 目录
+
+   - 每个源文件由两部分组成：
+     1) [[https://middlemanapp.com/basics/frontmatter][YAML-Frontmatter]] 头部(YAML header)
+     2) 内容区(contents)
+   - 解析源文件生成JS Object, 送入下一层([[https://github.com/segmentio/ware][middleware]])
+
+2. =.use= 使用一步或多步插件对上一步的JS Object进行处理。送入下一层
+3. =.build= 将最终处理的contents写入相应文件，默认存放 =build/= 目录
+
+** 常用插件
+
+- [[https://github.com/superwolff/metalsmith-layouts][metalsmith-layouts]]
+- [[https://github.com/segmentio/metalsmith-markdown][metalsmith-markdown]]
+- [[https://github.com/segmentio/metalsmith-permalinks][metalsmith-permalinks]]
+- [[https://github.com/segmentio/metalsmith-collections][metalsmith-collections]]
+
+* 优点
+
+- 配置灵活简单，容易上手
+- 插件容易写，可与Nodejs各种类库无缝接合
+- 生成的静态站无服务器运算，最小化服务器负担
+
+* 应用
+
+- 博客(blog)
+- 小型CMS站点(公司或个人)
+- 对响应时间有要求的站点(静态无服务器运算)
+
+* 演示教程
+
+- 建立目录 ::
+
+#+BEGIN_SRC bash
+  mkdir -p test-metal/{src,layouts}
+  touch test-metal/src/{index.md,contact.md}
+#+END_SRC
+
+

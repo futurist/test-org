@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
 <head>
-<!-- 2016-05-04 ������ 21:05 -->
+<!-- 2016-05-05 Thu 14:05 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>使用Metalsmith搭建静态博客</title>
+<title>Metalsmith使用方法教程</title>
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="5分钟学院" />
 <style type="text/css">
@@ -143,62 +143,55 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">使用Metalsmith搭建静态博客</h1>
+<h1 class="title">Metalsmith使用方法教程</h1>
 <div id="table-of-contents">
 <h2>&#30446;&#24405;</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline4">1. Metalsmith简介，为何？</a>
+<li><a href="#orgheadline3">1. Metalsmith简介，为何？</a>
 <ul>
-<li><a href="#orgheadline2">1.1. 基本流程</a></li>
-<li><a href="#orgheadline3">1.2. 常用插件</a></li>
+<li><a href="#orgheadline1">1.1. 基本流程</a></li>
+<li><a href="#orgheadline2">1.2. 常用插件</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline5">2. 优点</a></li>
-<li><a href="#orgheadline6">3. 应用</a></li>
-<li><a href="#orgheadline7">4. 搭建博客过程</a></li>
+<li><a href="#orgheadline4">2. 优点</a></li>
+<li><a href="#orgheadline5">3. 应用</a></li>
+<li><a href="#orgheadline6">4. 演示教程</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">1</span> Metalsmith简介，为何？</h2>
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3"><span class="section-number-2">1</span> Metalsmith简介，为何？</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 <a href="http://metalsmith.io/">Metalsmith</a> 是使用NodeJS进行文件处理的库，一般用于静态站生成。
 </p>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-3">
-<h3 id="orgheadline2"><span class="section-number-3">1.1</span> 基本流程</h3>
+<div id="outline-container-orgheadline1" class="outline-3">
+<h3 id="orgheadline1"><span class="section-number-3">1.1</span> 基本流程</h3>
 <div class="outline-text-3" id="text-1-1">
-</div><div id="outline-container-orgheadline1" class="outline-4">
-<h4 id="orgheadline1"><span class="section-number-4">1.1.1</span> sdfjkdsf</h4>
-<div class="outline-text-4" id="text-1-1-1">
 <ol class="org-ol">
-<li><code>.src</code> 读取*源文件*( .src(<i>dirname</i>) )， <i>dirname</i> 默认 <code>src/</code> 目录
+<li><code>.src</code> 读取 <b>源文件</b> ( .src(<i>dirname</i>) )， <i>dirname</i> 默认 <code>src/</code> 目录
 
 <ul class="org-ul">
 <li>每个源文件由两部分组成：
 <ol class="org-ol">
 <li><a href="https://middlemanapp.com/basics/frontmatter">YAML-Frontmatter</a> 头部(YAML header)</li>
-
 <li>内容区(contents)</li>
 </ol></li>
-
 <li>解析源文件生成JS Object, 送入下一层(<a href="https://github.com/segmentio/ware">middleware</a>)</li>
 </ul></li>
 
 <li><code>.use</code> 使用一步或多步插件对上一步的JS Object进行处理。送入下一层</li>
-
 <li><code>.build</code> 将最终处理的contents写入相应文件，默认存放 <code>build/</code> 目录</li>
 </ol>
 </div>
 </div>
-</div>
 
-<div id="outline-container-orgheadline3" class="outline-3">
-<h3 id="orgheadline3"><span class="section-number-3">1.2</span> 常用插件</h3>
+<div id="outline-container-orgheadline2" class="outline-3">
+<h3 id="orgheadline2"><span class="section-number-3">1.2</span> 常用插件</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li><a href="https://github.com/superwolff/metalsmith-layouts">metalsmith-layouts</a></li>
@@ -210,14 +203,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-
-
-
-
-
-
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5"><span class="section-number-2">2</span> 优点</h2>
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4"><span class="section-number-2">2</span> 优点</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>配置灵活简单，容易上手</li>
@@ -227,9 +214,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-
-<div id="outline-container-orgheadline6" class="outline-2">
-<h2 id="orgheadline6"><span class="section-number-2">3</span> 应用</h2>
+<div id="outline-container-orgheadline5" class="outline-2">
+<h2 id="orgheadline5"><span class="section-number-2">3</span> 应用</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>博客(blog)</li>
@@ -239,13 +225,26 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline7" class="outline-2">
-<h2 id="orgheadline7"><span class="section-number-2">4</span> 搭建博客过程</h2>
+<div id="outline-container-orgheadline6" class="outline-2">
+<h2 id="orgheadline6"><span class="section-number-2">4</span> 演示教程</h2>
+<div class="outline-text-2" id="text-4">
+<dl class="org-dl">
+<dt>建立目录</dt><dd></dd>
+</dl>
+
+<div class="org-src-container">
+
+<pre class="src src-bash">mkdir -p test-metal/{src,layouts}
+touch test-metal/src/{index.md,contact.md}
+</pre>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
+<p class="date">&#26085;&#26399;: <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-05-05 Thu&gt;</span></span></p>
 <p class="author">&#20316;&#32773;: 5分钟学院</p>
-<p class="date">Created: 2016-05-04 ������ 21:05</p>
+<p class="date">更新: 2016-05-05 Thu 14:05</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
